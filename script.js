@@ -14,3 +14,8 @@ console.log(`With ${gold} gold, we can afford`, affordableItems);
 //Her går vi tilbake til listen vår for å hente frem alle navnene til produktene
 const productNames = products.map((item) => item.name);
 console.log("productNames:", productNames);
+//Her velger vi å kun hente inn produkter fra category: electronics
+const electronicItems = products.filter(
+  (item) => item.category === "electronics"
+);
+console.log(`Electronic products in our store:`, electronicItems);
